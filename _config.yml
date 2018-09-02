@@ -1,0 +1,13 @@
+title: Tri Nguyen
+email: me@trinnguyen.com
+description: Personal notes on cross-platform mobile development with Xamarin
+twitter_username: trinnguyen
+github_username: trinnguyen
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+jekyll_admin:
+  hidden_links: null
