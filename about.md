@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+An independent software engineer who has the strong understanding about Xamarin under-the-hood and native iOS, Android SDKs, work effectively individual to turn startup idea into production-ready mobile applications.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Check out my GitHub:
+[http://github.com/trinnguyen](http://github.com/trinnguyen)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Xamarin Certified Mobile Developer: [http://devconnect.xamarin.com/profile/888](http://devconnect.xamarin.com/profile/888)
