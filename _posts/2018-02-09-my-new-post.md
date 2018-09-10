@@ -1,5 +1,6 @@
 ---
 title: My New Post
+permalink: my-new-post
 layout: post
 ---
 
