@@ -1,6 +1,6 @@
 ---
 title: My New Post
-permalink: my-new-post
+permalink: /remove-the-used-components-manually-from-visual-studio-for-mac
 layout: post
 ---
 
