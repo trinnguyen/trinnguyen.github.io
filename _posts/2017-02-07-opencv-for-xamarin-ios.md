@@ -4,7 +4,7 @@ title: OpenCV for Xamarin.iOS
 date: 2017-02-07T15:57:44+00:00
 author: trinnguyen
 layout: post
-permalink: /opencv-for-xamarin-ios/
+permalink: /opencv-for-xamarin-ios
 categories:
   - Xamarin
 tags:
