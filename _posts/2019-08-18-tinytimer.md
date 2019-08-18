@@ -14,7 +14,7 @@ tags:
 
 TinyTimer - A simple Timer for macOS, access quickly from MenuBar, get more focused on the task
 - Built with Xamarin.Mac
-- Open-source: https://github.com/trinnguyen/tinytimer
+- Open-source: <a href="https://github.com/trinnguyen/tinytimer">https://github.com/trinnguyen/tinytimer</a>
 
 ## Features
 - Start, Pause, Stop from MenuBar
