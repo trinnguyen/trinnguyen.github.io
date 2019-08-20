@@ -2,7 +2,11 @@
 layout: main
 ---
 {% if site.mixpanel-code %}
-<script type="text/javascript">mixpanel.track("Page View")</script>
+<script type="text/javascript">
+  window.onload = function() {
+    mixpanel.track("Page View");
+  };
+</script>
 {% endif %}
 <article class="article-page">
   <div class="page-content">
