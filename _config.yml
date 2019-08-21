@@ -24,7 +24,7 @@ discus-identifier: trinnguyen # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
-mixpanel-code: c10d07f8f6fc650159cf4380e04aa0fe # Mixpanel
+mixpanel-code: 187cb6ebfb193858c660440e4ac58062 # Mixpanel
 
 # Build Settings
 markdown: kramdown
