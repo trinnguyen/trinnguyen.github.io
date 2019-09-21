@@ -23,7 +23,7 @@ msbuild /t:Build && msbuild /t:Install && adb shell monkey -p APP_PACKAGE_NAME 1
 ```
 
 ### Notes
-- It is required to ensure that devices or simulator is already running. Invoke `adb devices` should have some result. Simulator can be run using Android SDK tool `emulator`. Example: `./emulator -avd Pixel_2_29`
+- It is required to ensure that devices or simulator is already running. Invoke *adb devices* should have some result. Simulator can be run using Android SDK tool *emulator*. Example: *./emulator -avd Pixel_2_29*
 
 - There are built-in MSBuild targets that take care of everything, from building to deploying. Have a look at this docs: https://docs.microsoft.com/en-us/xamarin/android/deploy-test/building-apps/build-process#build-targets
 
@@ -35,7 +35,7 @@ msbuild /t:Install
 msbuild /t:Uninstall
 msbuild /t:UpdateAndroidResources
 ```
-- `adb shell monkey` is used to launch the installed app
+- *adb shell monkey* is used to launch the installed app
 - **UpdateAndroidResources** is useful when having trouble with the generated code in Resources.designer.cs or when editting resources file (i.e. strings.xml)
 
 ## Run Xamarin.iOS project in command line
@@ -47,19 +47,19 @@ msbuild /t:Build && /Library/Frameworks/Xamarin.iOS.framework/Versions/Current/b
 ```
 
 ### Notes
-- `msbuild /t:Build` for building the Xamarin.iOS app bundle, output file `YOUR_IOS_PROJECT_NAME.app` in `bin/iPhoneSimulator/Debug` folder. There is no need for generating IPA file during development
+- *msbuild /t:Build* for building the Xamarin.iOS app bundle, output file `YOUR_IOS_PROJECT_NAME.app` in `bin/iPhoneSimulator/Debug` folder. There is no need for generating IPA file during development
 
-- `mlaunch` used for installing and launching the Xamarin.iOS app bundle on device or simulator. This is still closed source maintained by Xamarin team. But reading the help page would help using the tool
-`/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch -h`
+- *mlaunch* used for installing and launching the Xamarin.iOS app bundle on device or simulator. This is still closed source maintained by Xamarin team. But reading the help page would help using the tool
+*/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch -h*
 
 ### Explain steps to work with `mlaunch`
-1. Locate `mlaunch` tool which usually locates at `/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch`
+1. Locate *mlaunch* tool which usually locates at */Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch*
 
-2. Get list of simulators and save the `runtime` and `devicetype` value
+2. Get list of simulators and save the *runtime* and *devicetype* value
 ```
 mlaunch --listsim simulators.xml
 ```
-`simulators.xml` is a temporary file that store all available simulators. Select a simulator (i.e iPhone XR), and keep the associated value of `SimRuntime` and `SimDeviceType` for later usage,
+*simulators.xml* is a temporary file that store all available simulators. Select a simulator (i.e iPhone XR), and keep the associated value of *SimRuntime* and *SimDeviceType* for later usage,
 
 3. Construct argument and launch the app
 
@@ -69,4 +69,4 @@ mlaunch --launchsim=[IOS_APP_PATH] --device::v2:runtime=[SimRuntime],devicetype=
     - *IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step
     - update the *--device* argument with the `SimRuntime` and `SimDeviceType` in the above step
 
-4. The message `Press enter to terminate the application message` will be shown when the app launch on simulator.
+4. The message *Press enter to terminate the application message* will be shown when the app launch on simulator.
