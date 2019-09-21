@@ -67,6 +67,6 @@ mlaunch --listsim simulators.xml
 mlaunch --launchsim=[IOS_APP_PATH] --device::v2:runtime=[SimRuntime],devicetype=[SimDeviceType]
 ```
 
-*IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step. The *--device* argument is constructed using the `SimRuntime` and `SimDeviceType` value from the above step.
+*IOS_APP_PATH* is the path to *YOUR_IOS_PROJECT_NAME.app* file generated after *msbuild* step. The *--device* argument is constructed using the *SimRuntime* and *SimDeviceType* value from the above step.
 
 4. The message *Press enter to terminate the application message* will be shown when the app launch on simulator.
