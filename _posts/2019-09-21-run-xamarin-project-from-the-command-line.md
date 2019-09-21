@@ -47,7 +47,7 @@ msbuild /t:Build && /Library/Frameworks/Xamarin.iOS.framework/Versions/Current/b
 ```
 
 ### Notes
-- *msbuild /t:Build* for building the Xamarin.iOS app bundle, output file `YOUR_IOS_PROJECT_NAME.app` in `bin/iPhoneSimulator/Debug` folder. There is no need for generating IPA file during development
+- *msbuild /t:Build* for building the Xamarin.iOS app bundle, output file *YOUR_IOS_PROJECT_NAME.app* in *bin/iPhoneSimulator/Debug* folder. There is no need for generating IPA file during development
 
 - *mlaunch* used for installing and launching the Xamarin.iOS app bundle on device or simulator. This is still closed source maintained by Xamarin team. But reading the help page would help using the tool
 */Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch -h*
