@@ -1,5 +1,5 @@
 ---
-id: 88
+id: 101
 title: Run Xamarin project from the command line
 date: 2019-09-21T21:13:00+02:00
 author: trinnguyen
@@ -66,7 +66,8 @@ mlaunch --listsim simulators.xml
 ```
 mlaunch --launchsim=[IOS_APP_PATH] --device::v2:runtime=[SimRuntime],devicetype=[SimDeviceType]
 ```
-    - *IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step
-    - update the *--device* argument with the `SimRuntime` and `SimDeviceType` in the above step
+
+- *IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step
+- update the *--device* argument with the `SimRuntime` and `SimDeviceType` in the above step
 
 4. The message *Press enter to terminate the application message* will be shown when the app launch on simulator.
