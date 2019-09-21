@@ -25,7 +25,7 @@ msbuild /t:Build && msbuild /t:Install && adb shell monkey -p APP_PACKAGE_NAME 1
 ### Notes
 - It is required to ensure that devices or simulator is already running. Invoke *adb devices* should have some result. Simulator can be run using Android SDK tool *emulator*. Example: *./emulator -avd Pixel_2_29*
 
-- There are built-in MSBuild targets that take care of everything, from building to deploying. Have a look at this docs: [https://docs.microsoft.com/en-us/xamarin/android/deploy-test/building-apps/build-process#build-targets](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/building-apps/build-process#build-targets)
+- There are built-in MSBuild targets that take care of everything, from building to deploying. Have a look at this docs: [https://docs.microsoft.com/en-us/xamarin/android/deploy-test/building-apps/build-process#build-targets](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/building-apps/build-process#build-targets){:target="_blank"}
 
 ```
 msbuild /t:Build
