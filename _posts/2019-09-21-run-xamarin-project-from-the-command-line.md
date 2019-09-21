@@ -1,10 +1,10 @@
 ---
 id: 101
-title: Run Xamarin project from the command line
+title: Run Xamarin project from command line
 date: 2019-09-21T21:13:00+02:00
 author: trinnguyen
 layout: post
-permalink: /run-xamarin-project-from-the-command-line/
+permalink: /run-xamarin-project-from-command-line/
 categories:
   - Xamarin
 tags:
@@ -16,7 +16,7 @@ tags:
 
 I feels pleasant working on Xamarin projects with VSCode in parallel with Jetbrains Rider IDE. It's neccessary to find a way to build and run Xamarin.iOS and Xamarin.Android apps using command line and generate those scripts as tasks in VSCode for quick development.
 
-## Run Xamarin.Android project in command line
+## Run Xamarin.Android project from command line
 
 ```
 msbuild /t:Build && msbuild /t:Install && adb shell monkey -p APP_PACKAGE_NAME 1
@@ -38,9 +38,9 @@ msbuild /t:UpdateAndroidResources
 - *adb shell monkey* is used to launch the installed app
 - **UpdateAndroidResources** is useful when having trouble with the generated code in Resources.designer.cs or when editting resources file (i.e. strings.xml)
 
-## Run Xamarin.iOS project in command line
+## Run Xamarin.iOS project from command line
 
-*Example build and run iOS app on iPhone XR, iOS 12.4 simulator*
+*Example build and run Xamarin.iOS app on iPhone XR, iOS 12.4 simulator*
 
 ```
 msbuild /t:Build && /Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch --launchsim=bin/iPhoneSimulator/Debug/YOUR_IOS_PROJECT_NAME.app --device::v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-12-4,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-XR
