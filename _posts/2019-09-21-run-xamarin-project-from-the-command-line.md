@@ -52,7 +52,7 @@ msbuild /t:Build && /Library/Frameworks/Xamarin.iOS.framework/Versions/Current/b
 - *mlaunch* used for installing and launching the Xamarin.iOS app bundle on device or simulator. This is still closed source maintained by Xamarin team. But reading the help page would help using the tool
 */Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch -h*
 
-### Explain steps to work with `mlaunch`
+### Explain steps to work with mlaunch
 1. Locate *mlaunch* tool which usually locates at */Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch*
 
 2. Get list of simulators and save the *runtime* and *devicetype* value
@@ -67,7 +67,6 @@ mlaunch --listsim simulators.xml
 mlaunch --launchsim=[IOS_APP_PATH] --device::v2:runtime=[SimRuntime],devicetype=[SimDeviceType]
 ```
 
-- *IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step
-- update the *--device* argument with the `SimRuntime` and `SimDeviceType` in the above step
+*IOS_APP_PATH* is the path to `YOUR_IOS_PROJECT_NAME.app` file generated after *msbuild* step. The *--device* argument is constructed using the `SimRuntime` and `SimDeviceType` value from the above step.
 
 4. The message *Press enter to terminate the application message* will be shown when the app launch on simulator.
