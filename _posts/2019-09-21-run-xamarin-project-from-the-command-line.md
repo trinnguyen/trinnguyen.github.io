@@ -1,6 +1,7 @@
 ---
 id: 101
 title: Run Xamarin project from command line
+description: Simple shell scripts to get Xamarin project up and running on simulators or devices using MSBuild, mlaunch and adb
 date: 2019-09-21T21:13:00+02:00
 author: trinnguyen
 layout: post
