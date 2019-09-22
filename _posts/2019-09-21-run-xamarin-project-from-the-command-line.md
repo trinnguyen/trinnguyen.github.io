@@ -5,7 +5,7 @@ description: Simple shell scripts to get Xamarin project up and running on simul
 date: 2019-09-21T21:13:00+02:00
 author: trinnguyen
 layout: post
-permalink: /run-xamarin-project-from-command-line/
+permalink: /xamarin/run-xamarin-project-from-command-line/
 categories:
   - Xamarin
 tags:
