@@ -20,7 +20,6 @@ I feels pleasant working on Xamarin projects with VSCode in parallel with Jetbra
 ## Run Xamarin.Android project from command line
 
 {% highlight shell %}
-Install-Package Xamarin.1PasswordExtension
 msbuild /t:Build && msbuild /t:Install && adb shell monkey -p APP_PACKAGE_NAME 1
 {% endhighlight %}
 
