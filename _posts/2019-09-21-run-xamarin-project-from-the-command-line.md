@@ -15,7 +15,9 @@ tags:
   - vscode
 ---
 
-I feels pleasant working on Xamarin projects with VSCode in parallel with Jetbrains Rider IDE. It's neccessary to find a way to build and run Xamarin.iOS and Xamarin.Android apps using command line and generate those scripts as tasks in VSCode for quick development.
+*Update 2019, Oct 21: Add Build Archive for Xamarin.iOS*
+
+I feel pleasant working on Xamarin projects with VSCode in parallel with Jetbrains Rider IDE. It's neccessary to find a way to build and run Xamarin.iOS and Xamarin.Android apps using command line and generate those scripts as tasks in VSCode for quick development.
 
 ## Run Xamarin.Android project from command line
 
@@ -73,3 +75,11 @@ mlaunch --launchsim=IOS_APP_PATH --device::v2:runtime=SIM_RUNTIME,devicetype=SIM
 {% endhighlight %}
     
 - The message *Press enter to terminate the application message* will be shown when the app launch on simulator.
+
+### Others script for Xamarin.iOS
+
+- Generate Xcode Archive for publishing (suggest build Solution file rather than Project file)
+
+{% highlight shell %}
+msbuild /t:Build /p:Configuration=Release /p:Platform=iPhone /p:ArchiveOnBuild=True
+{% endhighlight %}
