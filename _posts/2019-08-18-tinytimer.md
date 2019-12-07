@@ -17,7 +17,7 @@ tags:
 TinyTimer - A simple Timer for macOS, access quickly from MenuBar, get more focused on the task
 - Built with Swift and Xcode
 - Open-source: <a href="https://github.com/trinnguyen/tinytimer">https://github.com/trinnguyen/tinytimer</a>
-- Download: [TinyTimer v1.1.0.zip](https://github.com/trinnguyen/tinytimer/releases/download/v1.1.0/TinyTimer-v1.1.0.zip)
+- Download: [TinyTimer v1.1.1.zip](https://github.com/trinnguyen/tinytimer/releases/download/v1.1.1/TinyTimer-1.1.1.zip)
 
 ## Features
 - Start, Pause, Stop from MenuBar
